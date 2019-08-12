@@ -13,6 +13,6 @@ function getUserInput(){
     const divide = 11.11;
     const userSpend = Math.floor(remainder / divide);
 
-    console.log(userSpend);
+    console.log("user spends= ",userSpend);
 }
 
