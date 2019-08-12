@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="main.js" type="text/javascript" defer></script>
+    <link  rel="stylesheet" href="style.css">
+    <title>Smart Budget</title>
+</head>
+<body>
+
+    <div class="title">
+    <h3>Smart Budgeting </h3>
+    <img src="https://image.flaticon.com/icons/svg/1924/1924793.svg">
+    </div>
+
+  <p>Enter your income and you will recieve detailed info </p>
+
+  <div class="wrapper">
+    <form id="nameForm">
+        <div class="form-uname">
+          <label id="nameLable" for="nameField">Income:</label>
+          <input id="nameField" type="text" maxlength="7">
+        </div>
+        
+        <div class="form-uname">
+            <label id="fixed-expensesLable" for="nameField">Fixed-expenses:</label>
+            <input id="fixed-expenses" type="text" maxlength="7">
+          </div>
+
+        <div class="form-sub">
+          <button id="subButton" type="button">Submit</button>
+        </div>
+    </form>
+
+    <div>
+        <p id="result"></p>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,2 +1,2 @@
 # smart-budgeting
-demo day project
+demo day project  
