@@ -2,7 +2,7 @@ subButton.addEventListener('click', getUserInput,false);
 
 function getUserInput(){
     const userIncome = document.getElementById('nameField').value;
-    const userExpenses = document.getElementById('fixed-expenses').value;
+    const userExpenses = document.getElementById('expenses').value;
     const remainder = userIncome - userExpenses;
     const divide = 11.11;
     const userSpend = Math.floor(remainder / divide);
