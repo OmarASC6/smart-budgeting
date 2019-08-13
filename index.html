@@ -1,21 +1,64 @@
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
     <script src="main.js" type="text/javascript" defer></script>
     <link  rel="stylesheet" href="style.css">
     <title>Smart Budget</title>
 </head>
 <body>
+<!-- Header -->
+<header class="header" >
+    <img class="logo" src="https://image.flaticon.com/icons/svg/1924/1924793.svg">
+    <p class="name">Smart Budgeting</p>
+    <button class="open-button" onclick="openForm()">Get Started</button>
+  </header>
 
-    <div class="title">
-    <h3>Smart Budgeting </h3>
-    <img src="https://image.flaticon.com/icons/svg/1924/1924793.svg">
+  <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+    
+        <button type="submit" class="btn">Login</button>
+        <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
     </div>
 
-  <p>Enter your income and you will recieve detailed info </p>
+
+
+
+
+
+    <div class ="scenarios">
+    <button class="block">Scenario One</button>
+    <button class="block">Scenario Two</button>
+    <button class="block">Scenario Three</button>
+    <button class="block">Scenario Four</button>
+    <button class="block">Scenario Five</button>
+  </div>
+
+
+
+
+
+
+
+<div class="background-image"></div>
+
+  <p>Enter your income and you will recieve financial info </p>
 
   <div class="wrapper">
     <form id="nameForm">
@@ -30,9 +73,12 @@
           </div>
 
         <div class="form-sub">
-          <button id="Button1" type="button">Balanced</button>
+          <button id="Button1" type="button">Recommended</button>
           <button id="Button2" type="button">Prioritize Food</button>
           <button id="Button3" type="button">Prioritize Transport</button>
+          <button id="Button4" type="button">Prioritize Medical</button>
+          <button id="Button5" type="button">Prioritize Entertainment</button>
+          <button id="Button6" type="button">Prioritize Utilities</button>
         </div>
     </form>
 
