@@ -1,9 +1,10 @@
 Button1.addEventListener('click', optionOne, false); 
 Button2.addEventListener('click', optionTwo, false);
 Button3.addEventListener('click', optionThree, false);
-Button4.addEventListener('click', optionThree, false);
-Button5.addEventListener('click', optionThree, false);
-Button6.addEventListener('click', optionThree, false);
+Button4.addEventListener('click', optionFour, false);
+Button5.addEventListener('click', optionFive, false);
+Button6.addEventListener('click', optionSix, false);
+Button7.addEventListener('click', optionSeven, false);
 
 function optionOne(){
     //Reccomended
@@ -57,7 +58,7 @@ function optionFour(){
     const remainderOp4 = userIncome - userExpenses;
     const food4 = Math.floor(remainderOp4 * 0.15);
     const personalexpenses4 = Math.floor(remainderOp4 * 0.20);
-    const transportion4 = Math.floor(remainderOp4 * 0.24);
+    const transportion4 = Math.floor(remainderOp4 * 0.14);
     const medical_expenses4 = Math.floor(remainderOp4 * 0.15);
     const utilities4 = Math.floor(remainderOp4 * 0.08);
     const emergency4 = Math.floor(remainderOp4 * 0.05);
@@ -72,7 +73,7 @@ function optionFive(){
     const remainderOp5 = userIncome - userExpenses;
     const food5 = Math.floor(remainderOp5 * 0.15);
     const personalexpenses5 = Math.floor(remainderOp5 * 0.30);
-    const transportion5 = Math.floor(remainderOp5 * 0.24);
+    const transportion5 = Math.floor(remainderOp5 * 0.14);
     const medical_expenses5 = Math.floor(remainderOp5 * 0.05);
     const utilities5 = Math.floor(remainderOp5 * 0.08);
     const emergency5 = Math.floor(remainderOp5 * 0.05);
@@ -87,22 +88,33 @@ function optionSix(){
     const remainderOp6 = userIncome - userExpenses;
     const food5 = Math.floor(remainderOp6 * 0.15);
     const personalexpenses6 = Math.floor(remainderOp6 * 0.20);
-    const transportion6 = Math.floor(remainderOp6 * 0.24);
+    const transportion6 = Math.floor(remainderOp6 * 0.14);
     const medical_expenses6 = Math.floor(remainderOp6 * 0.05);
-    const utilities6 = Math.floor(remainderOp6 * 0.08);
+    const utilities6 = Math.floor(remainderOp6 * 0.18);
     const emergency6 = Math.floor(remainderOp6 * 0.05);
     const savings6 = Math.floor(remainderOp6 * 0.10);
     document.getElementById("result").innerHTML = ("Food: " + food6 + "; Personal expenses: " + personalexpenses6 + "; Transportation: " + transportion6 + "; Medical: " + medical_expenses6 + "; Utilities:" + utilities6 + "; Emergency: " + emergency6 + "; Savings: " + savings6);
+}
+
+function optionSeven(){
+    //Emergency
+    const userIncome = document.getElementById('nameField').value;
+    const userExpenses = document.getElementById('fixedExpenses').value;
+    const remainderOp7 = userIncome - userExpenses;
+    const food7 = Math.floor(remainderOp7 * 0.15);
+    const personalexpenses7 = Math.floor(remainderOp7 * 0.20);
+    const transportion7 = Math.floor(remainderOp7 * 0.14);
+    const medical_expenses7 = Math.floor(remainderOp7 * 0.05);
+    const utilities7 = Math.floor(remainderOp7 * 0.18);
+    const emergency7 = Math.floor(remainderOp7 * 0.05);
+    const savings7 = Math.floor(remainderOp7 * 0.10);
+    document.getElementById("result").innerHTML = ("Food: " + food7 + "; Personal expenses: " + personalexpenses7 + "; Transportation: " + transportion7 + "; Medical: " + medical_expenses7 + "; Utilities:" + utilities7 + "; Emergency: " + emergency7 + "; Savings: " + savings7);
 }
 
 
 
 
 
-function openForm() {
-    document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
+
+
+

@@ -20,29 +20,32 @@
     <img class="logo" src="https://image.flaticon.com/icons/svg/1924/1924793.svg">
     <p class="name">Smart Budgeting</p>
     <button class="open-button" onclick="openForm()">Get Started</button>
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+
   </header>
 
-  <div class="form-popup" id="myForm">
-      <form action="/action_page.php" class="form-container">
-        <h1>Login</h1>
-    
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
-    
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-    
-        <button type="submit" class="btn">Login</button>
-        <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
-      </form>
-    </div>
 
 
 
 
 
 
-    <div class ="scenarios">
+
+  <div class ="scenarios">
     <button class="block">Scenario One</button>
     <button class="block">Scenario Two</button>
     <button class="block">Scenario Three</button>
@@ -79,6 +82,7 @@
           <button id="Button4" type="button">Prioritize Medical</button>
           <button id="Button5" type="button">Prioritize Entertainment</button>
           <button id="Button6" type="button">Prioritize Utilities</button>
+          <button id="Button7" type="button">Prioritize Emergency</button>
         </div>
     </form>
 
