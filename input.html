@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js" defer></script>
+    <script src="https://static.anychart.com/js/8.0.1/anychart-core.min.js" defer></script>
+<script src="https://static.anychart.com/js/8.0.1/anychart-pie.min.js" defer></script>
+
+<div id="container"></div>
+
+    <script src="js/input.js" type="text/javascript" defer></script>
+    <link  rel="stylesheet" href="css/input.css">
+    <title>Smart Budget</title>
+</head>
+
+<body>
+<!-- Header -->
+<header class="header" >
+    <img class="logo" src="https://image.flaticon.com/icons/svg/1924/1924793.svg">
+    <p class="name">Smart Budgeting</p>
+
+    <div class="form-uname">
+      <label id="nameLable" for="nameField">Income:</label>
+      <input id="nameField" type="text" maxlength="999" placeholder="Enter Your Income" name="email" required>
+    </div>
+
+    <div class="form-name">
+        <label id="savings" for="nameField">Savings:</label>
+        <input id="userSavings" type="text" maxlength="999" placeholder="Enter Your Savings" name="psw" required>
+      </div>
+    
+      <div class="form-name">
+        <label id="fixed-expenses" for="nameField">Fixed Expenses:</label>
+        <input id="fixedExpenses" type="text" maxlength="999" placeholder="Enter Your Fixed Expenses" name="psw" required>
+      </div>
+  </header>
+<div class="background-image"></div>
+
+  <p>Enter your income and you will recieve financial info </p>
+
+    <form id="nameForm">
+      <div class ="scenarios">
+          <button id="Button1" class="block" type="button">Recommended</button>
+          <button id="Button2" class="block" type="button">Prioritize Food</button>
+          <button id="Button3" class="block" type="button">Prioritize Transport</button>
+          <button id="Button4" class="block" type="button">Prioritize Medical</button>
+          <button id="Button5" class="block" type="button">Prioritize Entertainment</button>
+          <button id="Button6" class="block" type="button">Prioritize Utilities</button>
+          <button id="Button7" class="block" type="button">Prioritize Emergency</button>
+          <button id="Button8" class="block" type="button">Prioritize Education</button>
+      </div>
+        
+        </form>
+  
+
+    <div id="result">
+        <p id="results"></p>
+    </div>
+    
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+
+</body>
+</html>
