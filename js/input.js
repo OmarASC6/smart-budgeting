@@ -25,18 +25,16 @@ function optionOne(){
     document.getElementById("resultUtilities").innerText = (utilities1);
     document.getElementById("resultEmergency").innerText = (emergency1);
     document.getElementById("resultEducation").innerText = (education1);
+    document.getElementById("resultSavings").innerText = (userSavings);
 } 
+
+
 //     anychart.onDocumentReady(function() {
 //       // set the data
 //       const data = [
-//             {x: "Food", value: food1},
-//             {x: "personalexpenses", value: personalexpenses1},
-//             {x: "transportation", value: transportion1},
-//             {x: "medical", value: medical_expenses1},
-//             {x: "utilities", value: utilities1},
-//             {x: "emergency", value: emergency1},
-//             {x: "education", value: education1}
-//         ];
+//             {x: "Food", value: resultFood},
+//             {x: "personalexpenses", value: resultexpenses1},
+           
       
 //         // create the chart
 //         const chart = anychart.pie();
@@ -74,6 +72,7 @@ function optionTwo(){
     document.getElementById("resultUtilities").innerText = (utilities2);
     document.getElementById("resultEmergency").innerText = (emergency2);
     document.getElementById("resultEducation").innerText = (education2);
+    document.getElementById("resultSavings").innerText = (userSavings);
 } 
 
 function optionThree(){
@@ -95,7 +94,9 @@ function optionThree(){
     document.getElementById("resultMedical").innerText = (medical_expenses3);
     document.getElementById("resultUtilities").innerText = (utilities3);
     document.getElementById("resultEmergency").innerText = (emergency3);
-    document.getElementById("resultEducation").innerText = (education3);}
+    document.getElementById("resultEducation").innerText = (education3);
+    document.getElementById("resultSavings").innerText = (userSavings);
+}
 
 function optionFour(){
     //Medical
@@ -117,6 +118,7 @@ function optionFour(){
     document.getElementById("resultUtilities").innerText = (utilities4);
     document.getElementById("resultEmergency").innerText = (emergency4);
     document.getElementById("resultEducation").innerText = (education4);
+    document.getElementById("resultSavings").innerText = (userSavings);
 }
 
 function optionFive(){
@@ -139,7 +141,7 @@ function optionFive(){
     document.getElementById("resultUtilities").innerText = (utilities5);
     document.getElementById("resultEmergency").innerText = (emergency5);
     document.getElementById("resultEducation").innerText = (education5);
-    
+    document.getElementById("resultSavings").innerText = (userSavings);
 }
 
 function optionSix(){
@@ -162,4 +164,5 @@ function optionSix(){
     document.getElementById("resultUtilities").innerText = (utilities6);
     document.getElementById("resultEmergency").innerText = (emergency6);
     document.getElementById("resultEducation").innerText = (education6);
+    document.getElementById("resultSavings").innerText = (userSavings);
 }
