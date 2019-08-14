@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/input1.js" type="text/javascript" defer></script>
+    <script src="js/menu.js" type="text/javascript" defer></script>
+    <script src="js/input.js" type="text/javascript" defer></script>
     <link rel="stylesheet" href="css/input1.css" />
 
     <title>Smart Budgeting</title>
@@ -19,7 +21,7 @@
         <div class="w3-bar w3-black w3-card">
           <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
           <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-          <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+          <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
         </div>
       </div>
       
@@ -33,51 +35,56 @@
       
         <!-- Automatic Slideshow Images -->
         <div class="mySlides w3-display-container w3-center">
-          <img src="finance_image.png" style="width:100% ;height:470px">
-          <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small"> 
+          <img src="finance_image.png" style="width:100%">
+          <div class= "w3-container w3-text-white w3-padding-32"> 
           </div>
         </div>
 
 
       
-        <!-- The Band Section -->
+        <!-- The How To Section -->
         <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
           <h2 class="w3-wide">Smart Budgeting</h2>
-          <p class="w3-opacity"><i>Do not know what to do ?</i></p>
-          <p class="w3-justify">Step by Step guidance to the user. Step by Step guidance to the user. Step by Step guidance to the user.
-                Step by Step guidance to the user. Step by Step guidance to the user. Step by Step guidance to the user.
-                Step by Step guidance to the user. Step by Step guidance to the user. Step by Step guidance to the user.
-                Step by Step guidance to the user. Step by Step guidance to the user.
-          </p>
+          <p class="w3-opacity"><i>Do not know what to do ? It's Simple</i></p>
+          <li class="w3-justify"><i>Simply enter your annual income, your fixed expenses (rent, insurance, etc) and how much you want to save annualy</i></li>
+          <li class="w3-justify"><i>As you click submit, you will be directed to the scenarios where you pick your preferable scenario</i></li>
+          <li class="w3-justify"><i>As you choose a scenario, you will be able to see how each one allocates the income</i></li>
+          <li class="w3-justify"><i>Then, click next and you will see how your budget was allocated making you reach the savings goal you want</i></li>
 
 
+
+
+          <!--The input setion for the user-->
           <div class="mahi_holder">
                 <div class="container">
                   <div class="row bg_3">
                     <h2><i>Input your income and savings</i></h2>
           
                     <div class="col-1 input-effect">
-                      <input id="income" class="effect-19" type="text" placeholder="Ex:Karan $75,000 a Year" />
-                      <label>Income</label>
+                      <input id="income" class="effect-19" type="text" placeholder="" />
+                      <label>Anual income</label>
                       <span class="focus-border">
                         <i></i>
                       </span>
                     </div>
                     <div class="col-1 input-effect">
-                      <input id="fixed-expenses" class="effect-20" type="text" placeholder="Ex:Sara spents $25,000 on rent per year" />
+                      <input id="fixed-expenses" class="effect-19" type="text" placeholder="" />
                       <label>Fixed Expenses</label>
                       <span class="focus-border">
                         <i></i>
                       </span>
                     </div>
                     <div class="col-1 input-effect">
-                      <input id="savings" class="effect-21" type="text" placeholder="Ex: Robert wants to save $7,500" />
-                      <label>Savings</label>
-                      <span class="focus-border">
+                      <input id="savings" class="effect-19" type="text" placeholder="" />
+                      <label>Target savings</label>
+                      <span class="focus-border">   
                         <i></i>
                       </span>
                     </div>
                   </div>
+                  <a class="w3-button w3-black" href="#tour" onclick="myFunction()">Submit</a>
+              
+
                 </div>
               </div>
 
@@ -100,7 +107,7 @@
                 <div class="w3-container w3-white">
                   <p><b>Scenario One</b></p>
                   <p class="w3-opacity">Priortizing Food</p>
-                  <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                  <p>You like good food, and want your budget to reflect this.</p>
                   <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('popout-food').style.display='block'">Pick Scenario</button>
                 </div>
               </div>
@@ -109,7 +116,7 @@
                 <div class="w3-container w3-white">
                   <p><b>Scenario Two</b></p>
                   <p class="w3-opacity">Priortizing Transportation</p>
-                  <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                  <p>You enjoy travel, and want the capacity to do so.</p>
                   <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('popout-transportation').style.display='block'">Pick Scenario</button>
                 </div>
               </div>
@@ -119,7 +126,7 @@
                 <div class="w3-container w3-white">
                   <p><b>Scenario Three</b></p>
                   <p class="w3-opacity">Priortizing Education</p>
-                  <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                  <p>You like to learn without having to worry about student debt.</p>
                   <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('popout-education').style.display='block'">Pick Scenario</button>
                 </div>
               </div>
@@ -129,7 +136,7 @@
                     <div class="w3-container w3-white">
                       <p><b>Scenario Four</b></p>
                       <p class="w3-opacity">Priortizing Medical Expenses</p>
-                      <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                      <p>You live on the edge, but don't want to get cut by your insurance.</p>
                       <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('popout-medicalexpenses').style.display='block'">Pick Scenario</button>
                     </div>
                   </div>
@@ -139,7 +146,7 @@
                         <div class="w3-container w3-white">
                           <p><b>Scenario Five</b></p>
                           <p class="w3-opacity">Based on National Averages</p>
-                          <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                          <p>You do as you please, and we'll handle the money.</p>
                           <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('popout-balanced').style.display='block'">Pick Scenario</button>
                         </div>
                       </div>
@@ -148,7 +155,7 @@
                             <div class="w3-container w3-white">
                               <p><b>Scenario Six</b></p>
                               <p class="w3-opacity">Priortizing Entertainment</p>
-                              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                              <p>You're a party animal or a movie buff, and like to live to the fulles</p>
                               <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('popout-entertainment').style.display='block'">Pick Scenario</button>
                             </div>
                           </div>
@@ -163,13 +170,14 @@
               <span onclick="document.getElementById('popout-food').style.display='none'" 
              class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
               <h2 class="w3-wide">Food</h2>
+              <img src="meta-chart-rec.jpeg" style="width: 700px;">
             </header>
             <div class="w3-container">
-              <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">NEXT <i class="fa fa-check"></i></button>
-              <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-food').style.display='none'">Close <i class="fa fa-remove"></i></button>
+            <button id = "Button1" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">NEXT <i class="fa fa-check"></i></button>    
+            <!-- <button  class="w3-button w3-red w3-section" onclick="document.getElementById('popout-food').style.display='none'">Close<i class="fa fa-remove"></i></button>  -->
             </div>
           </div>
-        </div>
+          </div>
         <!-- On Click Scenarios Pop out --><!-- Transportation Scenario-->
         <div id="popout-transportation" class="w3-modal">
                 <div class="w3-modal-content w3-animate-top w3-card-4">
@@ -177,24 +185,26 @@
                     <span onclick="document.getElementById('popout-transportation').style.display='none'" 
                    class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
                     <h2 class="w3-wide">Transportation</h2>
+                    <img src="meta-chart-rec.jpeg" style="width: 700px;">
                   </header>
                   <div class="w3-container">
-                    <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">NEXT <i class="fa fa-check"></i></button>
-                    <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-transportation').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                    <button id = "Button2" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">NEXT <i class="fa fa-check"></i></button>
+                    <!-- <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-transportation').style.display='none'">Close <i class="fa fa-remove"></i></button> -->
                   </div>
                 </div>
               </div>
-        <!-- On Click Scenarios Pop out --><!-- Food Scenario-->
+        <!-- On Click Scenarios Pop out --><!-- Education Scenario-->
               <div id="popout-education" class="w3-modal">
                     <div class="w3-modal-content w3-animate-top w3-card-4">
                       <header class="w3-container w3-teal w3-center w3-padding-32"> 
                         <span onclick="document.getElementById('popout-education').style.display='none'" 
                        class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
                         <h2 class="w3-wide">Education</h2>
+                        <img src="meta-chart-rec.jpeg" style="width: 700px;">                       
                       </header>
                       <div class="w3-container">
-                        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">NEXT <i class="fa fa-check"></i></button>
-                        <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-education').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                        <button id = "Button3" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">NEXT <i class="fa fa-check"></i></button>
+                        <!-- <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-education').style.display='none'">Close <i class="fa fa-remove"></i></button> -->
                       </div>
                     </div>
                   </div>
@@ -205,10 +215,11 @@
                     <span onclick="document.getElementById('popout-medicalexpenses').style.display='none'" 
                    class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
                     <h2 class="w3-wide">Medical Expenses</h2>
+                    <img src="meta-chart-rec.jpeg" style="width: 700px;">
                   </header>
                   <div class="w3-container">
-                    <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">NEXT <i class="fa fa-check"></i></button>
-                    <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-medicalexpenses').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                    <button  id = "Button4" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">NEXT <i class="fa fa-check"></i></button>
+                    <!-- <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-medicalexpenses').style.display='none'">Close <i class="fa fa-remove"></i></button> -->
                   </div>
                 </div>
               </div>                 
@@ -219,10 +230,11 @@
                     <span onclick="document.getElementById('popout-balanced').style.display='none'" 
                    class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
                     <h2 class="w3-wide">National Averages</h2>
+                    <img src="meta-chart-rec.jpeg" style="width: 700px;">
                   </header>
                   <div class="w3-container">
-                    <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">NEXT <i class="fa fa-check"></i></button>
-                    <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-balanced').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                    <button id = "Button5" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">NEXT <i class="fa fa-check"></i></button>
+                    <!-- <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-balanced').style.display='none'">Close <i class="fa fa-remove"></i></button> -->
                   </div>
                 </div>
               </div>       
@@ -233,48 +245,42 @@
                     <span onclick="document.getElementById('popout-entertainment').style.display='none'" 
                    class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
                     <h2 class="w3-wide">Entertainment</h2>
+                    <img src="meta-chart-rec.jpeg" style="width: 700px;">
                   </header>
                   <div class="w3-container">
-                    <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">NEXT <i class="fa fa-check"></i></button>
-                    <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-entertainment').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                    <button id = "Button6" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">NEXT <i class="fa fa-check"></i></button>
+                    <!-- <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-entertainment').style.display='none'">Close <i class="fa fa-remove"></i></button> -->
                   </div>
                 </div>
+              </div>
+
+              <div>
+                  <table>
+                    <tr>
+                        <th scope="col">Category</th>
+                        <th scope="col">Money</th>
+                    </tr>
+                      <tr>
+                        <td>Food</td>
+                        <td id="resultFood"></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Introducing HTML5 by Bruce Lawson &#38; Remy Sharp</td>
+                        <td>Out of Stock</td>
+                        <td>1</td>
+                        <td>$22.23</td>
+                      </tr>
+                      <tr>
+                        <td>Bulletproof Web Design by Dan Cederholm</td>
+                        <td>In Stock</td>
+                        <td>1</td>
+                        <td>$30.17</td>
+                      </tr>
+                    </table>  
               </div> 
-
-      <!-- End Page Content -->
-      </div>
-      
-
-      <!-- the input fields-->
-    <div class="mahi_holder">
-      <div class="container">
-        <div class="row bg_3">
-          <h2><i>Input your income and savings</i></h2>
-
-          <div class="col-1 input-effect">
-            <input id="income" class="effect-19" type="text" placeholder="Ex:Karan earns $75,000 a Year" />
-            <label>Income</label>
-            <span class="focus-border">
-              <i></i>
-            </span>
-          </div>
-          <div class="col-1 input-effect">
-            <input id="fixed-expenses" class="effect-20" type="text" placeholder="Ex:Sara spents $25,000 on rent per year" />
-            <label>Fixed Expenses</label>
-            <span class="focus-border">
-              <i></i>
-            </span>
-          </div>
-          <div class="col-1 input-effect">
-            <input id="savings" class="effect-21" type="text" placeholder="Ex: Robert wants to save $7,500" />
-            <label>Savings</label>
-            <span class="focus-border">
-              <i></i>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
+              <!-- End Page Content -->
   </body>
 </html>

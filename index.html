@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
     <title>Smart Budget-Home</title>
     
 </head>
 <body>
-        <header class="w3-container w3-green w3-center" style="padding:128px 16px">
-                <h1 class="w3-margin w3-jumbo">Smart Budgeting</h1>
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+          <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+          <a href="input1.html" class="w3-bar-item w3-button w3-padding-large">GET STARTED</a>
+          <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+        </div>
+      </div>
+
+        <header class="w3-container w3-cyan w3-center" style="padding:128px 16px">
+                <h1 id="title1" class="w3-margin w3-jumbo">Smart Budgeting</h1>
                 <p class="w3-xlarge">"Budgeting made easier"</p>
               </header>
 
@@ -20,13 +29,23 @@
         <div class="w3-content">
           <div class="w3-twothird">
             <h1>Description</h1>
-            <h5 class="w3-padding-32">Our application Smart budget will present the user with a series of
-                scenarios, each prioritizing a specific spending category. The user will input their income and the amount 
-                of money they would like to set aside. They will then choose their ideal scenario, and
-                their money will be allocated into the  7 spending categories: food, personal expenses,  
-                medical expenses, utilities, emergency, education and savings . 
-                The money set aside by the user will be allocated into 
-                a user made or chosen category (Feature to come in a later build).</h5>
+            <h5 class="w3-padding-32">Our application Smart Budget helps users
+              budget their income while maintaining their savings. The user inputs
+              they annual income, fixed expenses, and a goal of how muuch they want to save.(i.e : 
+              John wants to save $3,500 to buy some AirPods and a new Mac).
+            </h5>
+            <h5 class="w3-padding-32"> The user then picks a scenario from different
+              scenarios. Each scenario priortizes a category more than the other (i.e : Alyssa prefers 
+              having a large food budget, so she would choose Senario 1. Mark would likely lean more towards scenario three,
+              since he's making his way through college and dislikes student loans.)
+            </h5>
+            <h5 class="w3-padding-32">After a user picks a scenario, they immediately recieve income
+              divided between seven categories: food, personal expenses/ entertainment, medical expenses,
+              utilities, emergency, education, and transportation. The user's budgets are allocated so they can 
+              still reach the amount they want to save.
+            </h5> 
+              
+
           </div>
 
           <div class="w3-third w3-center">
