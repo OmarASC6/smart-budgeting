@@ -276,3 +276,11 @@ input[type="text"] {
   color: #4caf50;
   transition: 0.3s;
 }
+
+
+
+
+
+
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
