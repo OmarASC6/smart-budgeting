@@ -190,3 +190,11 @@ td {
 td:first-child {
   border-left: 1px solid #cecfd5;
 }
+
+#container{
+  margin-block-start: 30px;
+  margin-block-end: 30px;
+}
+.title-end #results{
+  text-align: center;
+}
