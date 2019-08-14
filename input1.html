@@ -11,6 +11,8 @@
     <script src="js/menu.js" type="text/javascript" defer></script>
     <script src="js/input.js" type="text/javascript" defer></script>
     <link rel="stylesheet" href="css/input1.css" />
+    <script src="https://static.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+    <script src="https://static.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
 
     <title>Smart Budgeting</title>
   </head>
@@ -254,8 +256,8 @@
                 </div>
               </div>
 
-              <div>
-                  <table>
+              <div id="container">
+                  <table align="center">
                     <tr>
                         <th scope="col">Category</th>
                         <th scope="col">Money</th>
@@ -265,22 +267,36 @@
                         <td id="resultFood"></td>
                       </tr>
                       <tr>
-                        <td></td>
+                        <td>Personal</td>
+                        <td id="resultPersonal"></td>
                       </tr>
                       <tr>
-                        <td>Introducing HTML5 by Bruce Lawson &#38; Remy Sharp</td>
-                        <td>Out of Stock</td>
-                        <td>1</td>
-                        <td>$22.23</td>
+                        <td>Transportation</td>
+                        <td id="resultTransport"></td>
                       </tr>
                       <tr>
-                        <td>Bulletproof Web Design by Dan Cederholm</td>
-                        <td>In Stock</td>
-                        <td>1</td>
-                        <td>$30.17</td>
+                        <td>Medical</td>
+                        <td id="resultMedical"></td>
                       </tr>
-                    </table>  
-              </div> 
+                      <tr>
+                        <td>Utilities</td>
+                        <td id="resultUtilities"></td>
+                      </tr>
+                      <tr>
+                        <td>Emergency</td>
+                        <td id="resultEmergency"></td>
+                      </tr>
+                      <tr>
+                        <td>Education</td>
+                        <td id="resultEducation"></td>
+                      </tr>
+                    </table>
+            </div>
+
+
+
+
+
               <!-- End Page Content -->
   </body>
 </html>
