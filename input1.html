@@ -101,7 +101,7 @@
                   <p><b>Scenario One</b></p>
                   <p class="w3-opacity">Priortizing Food</p>
                   <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                  <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Pick Scenario</button>
+                  <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('popout-food').style.display='block'">Pick Scenario</button>
                 </div>
               </div>
               <div class="w3-third w3-margin-bottom">
@@ -110,7 +110,7 @@
                   <p><b>Scenario Two</b></p>
                   <p class="w3-opacity">Priortizing Transportation</p>
                   <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                  <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Pick Scenario</button>
+                  <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('popout-transportation').style.display='block'">Pick Scenario</button>
                 </div>
               </div>
 
@@ -120,7 +120,7 @@
                   <p><b>Scenario Three</b></p>
                   <p class="w3-opacity">Priortizing Education</p>
                   <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                  <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Pick Scenario</button>
+                  <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('popout-education').style.display='block'">Pick Scenario</button>
                 </div>
               </div>
 
@@ -130,7 +130,7 @@
                       <p><b>Scenario Four</b></p>
                       <p class="w3-opacity">Priortizing Medical Expenses</p>
                       <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                      <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Pick Scenario</button>
+                      <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('popout-medicalexpenses').style.display='block'">Pick Scenario</button>
                     </div>
                   </div>
 
@@ -140,7 +140,7 @@
                           <p><b>Scenario Five</b></p>
                           <p class="w3-opacity">Based on National Averages</p>
                           <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                          <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Pick Scenario</button>
+                          <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('popout-balanced').style.display='block'">Pick Scenario</button>
                         </div>
                       </div>
                       <div class="w3-third w3-margin-bottom">
@@ -149,7 +149,7 @@
                               <p><b>Scenario Six</b></p>
                               <p class="w3-opacity">Priortizing Entertainment</p>
                               <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                              <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Pick Scenario</button>
+                              <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('popout-entertainment').style.display='block'">Pick Scenario</button>
                             </div>
                           </div>
             </div>
@@ -160,13 +160,13 @@
         <div id="popout-food" class="w3-modal">
           <div class="w3-modal-content w3-animate-top w3-card-4">
             <header class="w3-container w3-teal w3-center w3-padding-32"> 
-              <span onclick="document.getElementById('ticketModal').style.display='none'" 
+              <span onclick="document.getElementById('popout-food').style.display='none'" 
              class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
               <h2 class="w3-wide">Food</h2>
             </header>
             <div class="w3-container">
               <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">NEXT <i class="fa fa-check"></i></button>
-              <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+              <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-food').style.display='none'">Close <i class="fa fa-remove"></i></button>
             </div>
           </div>
         </div>
@@ -174,13 +174,13 @@
         <div id="popout-transportation" class="w3-modal">
                 <div class="w3-modal-content w3-animate-top w3-card-4">
                   <header class="w3-container w3-teal w3-center w3-padding-32"> 
-                    <span onclick="document.getElementById('ticketModal').style.display='none'" 
+                    <span onclick="document.getElementById('popout-transportation').style.display='none'" 
                    class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
                     <h2 class="w3-wide">Transportation</h2>
                   </header>
                   <div class="w3-container">
                     <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">NEXT <i class="fa fa-check"></i></button>
-                    <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                    <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-transportation').style.display='none'">Close <i class="fa fa-remove"></i></button>
                   </div>
                 </div>
               </div>
@@ -188,13 +188,13 @@
               <div id="popout-education" class="w3-modal">
                     <div class="w3-modal-content w3-animate-top w3-card-4">
                       <header class="w3-container w3-teal w3-center w3-padding-32"> 
-                        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+                        <span onclick="document.getElementById('popout-education').style.display='none'" 
                        class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
                         <h2 class="w3-wide">Education</h2>
                       </header>
                       <div class="w3-container">
                         <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">NEXT <i class="fa fa-check"></i></button>
-                        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                        <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-education').style.display='none'">Close <i class="fa fa-remove"></i></button>
                       </div>
                     </div>
                   </div>
@@ -202,13 +202,13 @@
         <div id="popout-medicalexpenses" class="w3-modal">
                 <div class="w3-modal-content w3-animate-top w3-card-4">
                   <header class="w3-container w3-teal w3-center w3-padding-32"> 
-                    <span onclick="document.getElementById('ticketModal').style.display='none'" 
+                    <span onclick="document.getElementById('popout-medicalexpenses').style.display='none'" 
                    class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
                     <h2 class="w3-wide">Medical Expenses</h2>
                   </header>
                   <div class="w3-container">
                     <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">NEXT <i class="fa fa-check"></i></button>
-                    <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                    <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-medicalexpenses').style.display='none'">Close <i class="fa fa-remove"></i></button>
                   </div>
                 </div>
               </div>                 
@@ -216,13 +216,13 @@
         <div id="popout-balanced" class="w3-modal">
                 <div class="w3-modal-content w3-animate-top w3-card-4">
                   <header class="w3-container w3-teal w3-center w3-padding-32"> 
-                    <span onclick="document.getElementById('ticketModal').style.display='none'" 
+                    <span onclick="document.getElementById('popout-balanced').style.display='none'" 
                    class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
                     <h2 class="w3-wide">National Averages</h2>
                   </header>
                   <div class="w3-container">
                     <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">NEXT <i class="fa fa-check"></i></button>
-                    <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                    <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-balanced').style.display='none'">Close <i class="fa fa-remove"></i></button>
                   </div>
                 </div>
               </div>       
@@ -230,13 +230,13 @@
         <div id="popout-entertainment" class="w3-modal">
                 <div class="w3-modal-content w3-animate-top w3-card-4">
                   <header class="w3-container w3-teal w3-center w3-padding-32"> 
-                    <span onclick="document.getElementById('ticketModal').style.display='none'" 
+                    <span onclick="document.getElementById('popout-entertainment').style.display='none'" 
                    class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
                     <h2 class="w3-wide">Entertainment</h2>
                   </header>
                   <div class="w3-container">
                     <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">NEXT <i class="fa fa-check"></i></button>
-                    <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                    <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-entertainment').style.display='none'">Close <i class="fa fa-remove"></i></button>
                   </div>
                 </div>
               </div> 
