@@ -7,12 +7,15 @@ Button6.addEventListener('click', optionSix, false);
 Button7.addEventListener('click', optionSeven, false);
 Button8.addEventListener('click', optionEight, false);
 
+
 function optionOne(){
+    Button1.addEventListener('click', optionOne, false); 
     //Reccomended
     const userIncome = document.getElementById('nameField').value;
     const userExpenses = document.getElementById('fixedExpenses').value;
     const userSavings = document.getElementById('userSavings').value;
     const remainderOp1 = userIncome - (userExpenses + userSavings);
+    alert(remainderOp1);
     const food1 = Math.floor(remainderOp1 * 0.15);
     const personalexpenses1 = Math.floor(remainderOp1 * 0.20);
     const transportion1 = Math.floor(remainderOp1 * 0.15);
@@ -25,39 +28,7 @@ function optionOne(){
 }
 
 function optionTwo(){
-    //Food
-    anychart.onDocumentReady(function() {
 
-        // set the data
-        var data = [
-            {x: "Food", value: 10},
-            {x: "Personal expenses", value: 10},
-            {x: "", value: 100},
-            {x: "", value: 10},
-            {x: "", value: 10},
-            {x: "", value: 10},
-            {x: "", value: 10}
-        ];
-      
-        // create the chart
-        var chart = anychart.pie();
-      
-        // set the chart title
-        chart.title("Population by Race for the United States: 2010 Census");
-      
-        // add the data
-        chart.data(data);
-        
-        // set legend position
-        chart.legend().position("right");
-        // set items layout
-        chart.legend().itemsLayout("vertical");  
-      
-        // display the chart in the container
-        chart.container('container');
-        chart.draw();
-      
-      });
     const userIncome = document.getElementById('nameField').value;
     const userExpenses = document.getElementById('fixedExpenses').value;
     const userSavings = document.getElementById('userSavings').value;
@@ -124,39 +95,39 @@ function optionFive(){
     document.getElementById("result").innerHTML = ("Food: " + food5 + "; Personal expenses: " + personalexpenses5 + "; Transportation: " + transportion5 + "; Medical: " + medical_expenses5 + "; Utilities:" + utilities5 + "; Emergency: " + emergency5 + "; Education: " + education5 + "; Savings: " + savings5);
 }
 
-function optionSix(){
-    //Utilities
-    const userIncome = document.getElementById('nameField').value;
-    const userExpenses = document.getElementById('fixedExpenses').value;
-    const userSavings = document.getElementById('userSavings').value;
-    const remainderOp6 = userIncome - (userExpenses + userSavings);
-    const food5 = Math.floor(remainderOp6 * 0.15);
-    const personalexpenses6 = Math.floor(remainderOp6 * 0.10);
-    const transportion6 = Math.floor(remainderOp6 * 0.15);
-    const medical_expenses6 = Math.floor(remainderOp6 * 0.05);
-    const utilities6 = Math.floor(remainderOp6 * 0.20);
-    const emergency6 = Math.floor(remainderOp6 * 0.05);
-    const education6 = Math.floor(remainderOp6 * 0.10);
-    const savings6 = Math.floor(remainderOp6 * 0.10);
-    document.getElementById("result").innerHTML = ("Food: " + food6 + "; Personal expenses: " + personalexpenses6 + "; Transportation: " + transportion6 + "; Medical: " + medical_expenses6 + "; Utilities:" + utilities6 + "; Emergency: " + emergency6 + "; Education:" + education6 + "; Savings: " + savings6);
-}
+// function optionSix(){
+//     //Utilities
+//     const userIncome = document.getElementById('nameField').value;
+//     const userExpenses = document.getElementById('fixedExpenses').value;
+//     const userSavings = document.getElementById('userSavings').value;
+//     const remainderOp6 = userIncome - (userExpenses + userSavings);
+//     const food5 = Math.floor(remainderOp6 * 0.15);
+//     const personalexpenses6 = Math.floor(remainderOp6 * 0.10);
+//     const transportion6 = Math.floor(remainderOp6 * 0.15);
+//     const medical_expenses6 = Math.floor(remainderOp6 * 0.05);
+//     const utilities6 = Math.floor(remainderOp6 * 0.20);
+//     const emergency6 = Math.floor(remainderOp6 * 0.05);
+//     const education6 = Math.floor(remainderOp6 * 0.10);
+//     const savings6 = Math.floor(remainderOp6 * 0.10);
+//     document.getElementById("result").innerHTML = ("Food: " + food6 + "; Personal expenses: " + personalexpenses6 + "; Transportation: " + transportion6 + "; Medical: " + medical_expenses6 + "; Utilities:" + utilities6 + "; Emergency: " + emergency6 + "; Education:" + education6 + "; Savings: " + savings6);
+// }
 
-function optionSeven(){
-    //Emergency
-    const userIncome = document.getElementById('nameField').value;
-    const userExpenses = document.getElementById('fixedExpenses').value;
-    const userSavings = document.getElementById('userSavings').value;
-    const remainderOp7 = userIncome - (userExpenses + userSavings);
-    const food7 = Math.floor(remainderOp7 * 0.15);
-    const personalexpenses7 = Math.floor(remainderOp7 * 0.10);
-    const transportion7 = Math.floor(remainderOp7 * 0.15);
-    const medical_expenses7 = Math.floor(remainderOp7 * 0.05);
-    const utilities7 = Math.floor(remainderOp7 * 0.10);
-    const emergency7 = Math.floor(remainderOp7 * 0.15);
-    const education7 = Math.floor(remainderOp7 * 0.10);
-    const savings7 = Math.floor(remainderOp7 * 0.10);
-    document.getElementById("result").innerHTML = ("Food: " + food7 + "; Personal expenses: " + personalexpenses7 + "; Transportation: " + transportion7 + "; Medical: " + medical_expenses7 + "; Utilities:" + utilities7 + "; Emergency: " + emergency7 + "; Education: " + education7 + "; Savings: " + savings7);
-}
+// function optionSeven(){
+//     //Emergency
+//     const userIncome = document.getElementById('nameField').value;
+//     const userExpenses = document.getElementById('fixedExpenses').value;
+//     const userSavings = document.getElementById('userSavings').value;
+//     const remainderOp7 = userIncome - (userExpenses + userSavings);
+//     const food7 = Math.floor(remainderOp7 * 0.15);
+//     const personalexpenses7 = Math.floor(remainderOp7 * 0.10);
+//     const transportion7 = Math.floor(remainderOp7 * 0.15);
+//     const medical_expenses7 = Math.floor(remainderOp7 * 0.05);
+//     const utilities7 = Math.floor(remainderOp7 * 0.10);
+//     const emergency7 = Math.floor(remainderOp7 * 0.15);
+//     const education7 = Math.floor(remainderOp7 * 0.10);
+//     const savings7 = Math.floor(remainderOp7 * 0.10);
+//     document.getElementById("result").innerHTML = ("Food: " + food7 + "; Personal expenses: " + personalexpenses7 + "; Transportation: " + transportion7 + "; Medical: " + medical_expenses7 + "; Utilities:" + utilities7 + "; Emergency: " + emergency7 + "; Education: " + education7 + "; Savings: " + savings7);
+// }
 
 function optionEight(){
     //Education
@@ -176,35 +147,7 @@ function optionEight(){
 }
 
 
-window.onload = function() {
 
-    const chart = new CanvasJS.Chart("chartContainer", {
-        animationEnabled: true,
-        title: {
-            text: "Recommended"
-        },
-        data: [{
-            type: "pie",
-            startAngle: 240,
-            yValueFormatString: "##0.00\"%\"",
-            indexLabel: "{label} {y}",
-            dataPoints: [
-                {y: 15, label: "Food"},
-                {y: 20, label: "Personal expenses"},
-                {y: 14, label: "Transportaion"},
-                {y: 5, label: "Medical expenses"},
-                {y: 8, label: "Utilities"},
-                {y: 5, label: "Emergency"},
-                {y: 10, label: "Savings"}
-              
-              
-          
-            ]
-        }]
-    });
-    chart.render();
-    
-    }
 
 
 
@@ -217,10 +160,4 @@ window.onload = function() {
 
 
 
-function openForm() {
-    document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
+
