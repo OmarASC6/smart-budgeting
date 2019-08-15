@@ -6,9 +6,9 @@ body {
 }
 
 h2 {
-  font-family: "Damion", cursive;
+  font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
-  color: #4caf50;
+  color: #ffffff;
   font-size: 35px;
   text-align: center;
   /* position: relative; */
@@ -16,7 +16,7 @@ h2 {
 
 h2:before {
   position: absolute;
-  content: "";
+  /* content: ""; */
   width: 100%;
   left: 0;
   top: 22px;
@@ -191,7 +191,7 @@ td:first-child {
   border-left: 1px solid #cecfd5;
 }
 
-#container{
+#containerResults{
   margin-block-start: 30px;
   margin-block-end: 30px;
 }

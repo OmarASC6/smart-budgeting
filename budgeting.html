@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/menu.js" type="text/javascript" defer></script>
     <script src="js/input.js" type="text/javascript" defer></script>
     <link rel="stylesheet" href="css/input1.css" />
@@ -171,7 +173,7 @@
               <span onclick="document.getElementById('popout-food').style.display='none'" 
              class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
               <h2 class="w3-wide">Food</h2>
-              <img src="assets/meta-chart-rec.jpeg" style="width: 700px;">
+              <img src="assets\Food Chart.png" style="width: 400px;">
             </header>
             <div class="w3-container">
             <button id = "Button1" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" onclick="document.getElementById('popout-food').style.display='none'">NEXT <i class="fa fa-check"></i></button>    
@@ -186,7 +188,7 @@
                     <span onclick="document.getElementById('popout-transportation').style.display='none'" 
                    class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
                     <h2 class="w3-wide">Transportation</h2>
-                    <img src="assets/meta-chart-rec.jpeg" style="width: 700px;">
+                    <img src="assets\Trans Chart.png" style="width: 400px;">
                   </header>
                   <div class="w3-container">
                     <button id = "Button2" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" onclick="document.getElementById('popout-transportation').style.display='none'">NEXT <i class="fa fa-check"></i></button>
@@ -201,10 +203,10 @@
                         <span onclick="document.getElementById('popout-education').style.display='none'" 
                        class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
                         <h2 class="w3-wide">Education</h2>
-                        <img src="assets/meta-chart-rec.jpeg" style="width: 700px;">                       
+                        <img src="assets\Edu Chart.png" style="width: 400px;">                       
                       </header>
                       <div class="w3-container">
-                        <button id = "Button3" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" onclick="document.getElementById('popout-education').style.display='none'">NEXT <i class="fa fa-check"></i></button>
+                        <button id = "Button3" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" href="#containerResults"  onclick="document.getElementById('popout-education').style.display='none'">NEXT <i class="fa fa-check"></i></button>
                         <!-- <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-education').style.display='none'">Close <i class="fa fa-remove"></i></button> -->
                       </div>
                     </div>
@@ -216,7 +218,7 @@
                     <span onclick="document.getElementById('popout-medicalexpenses').style.display='none'" 
                    class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
                     <h2 class="w3-wide">Medical Expenses</h2>
-                    <img src="assets/meta-chart-rec.jpeg" style="width: 700px;">
+                    <img src="assets\Med Chart.png" style="width: 400px;">
                   </header>
                   <div class="w3-container">
                     <button  id = "Button4" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" onclick="document.getElementById('popout-medicalexpenses').style.display='none'">NEXT <i class="fa fa-check"></i></button>
@@ -231,7 +233,7 @@
                     <span onclick="document.getElementById('popout-balanced').style.display='none'" 
                    class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
                     <h2 class="w3-wide">National Averages</h2>
-                    <img src="assets/meta-chart-rec.jpeg" style="width: 700px;">
+                    <img src="assets\Rec Chart.png" style="width: 400px;">
                   </header>
                   <div class="w3-container">
                     <button id = "Button5" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" onclick="document.getElementById('popout-balanced').style.display='none'">NEXT <i class="fa fa-check"></i></button>
@@ -246,16 +248,16 @@
                     <span onclick="document.getElementById('popout-entertainment').style.display='none'" 
                    class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
                     <h2 class="w3-wide">Entertainment</h2>
-                    <img src="assets/meta-chart-rec.jpeg" style="width: 700px;">
+                    <img src="assets\Entertainment Chart.png" style="width: 400px;">
                   </header>
                   <div class="w3-container">
-                    <button id = "Button6" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" onclick="document.getElementById('popout-entertainment').style.display='none'">NEXT <i class="fa fa-check"></i></button>
+                    <button id = "Button6" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right"  onclick="document.getElementById('popout-entertainment').style.display='none'">NEXT <i class="fa fa-check"></i></button>
                     <!-- <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-entertainment').style.display='none'">Close <i class="fa fa-remove"></i></button> -->
                   </div>
                 </div>
               </div>
 
-              <div id="container">
+              <div id="containerResults">
 
                   <table align="center">
                     <tr>
