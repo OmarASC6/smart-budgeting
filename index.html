@@ -4,40 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="main.js" type="text/javascript" defer></script>
-    <link  rel="stylesheet" href="style.css">
-    <title>Smart Budget</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+    <title>Smart Budget-Home</title>
+    
 </head>
 <body>
-
-    <div class="title">
-    <h3>Smart Budgeting </h3>
-    <img src="https://image.flaticon.com/icons/svg/1924/1924793.svg">
-    </div>
-
-  <p>Enter your income and you will recieve detailed info </p>
-
-  <div class="wrapper">
-    <form id="nameForm">
-        <div class="form-uname">
-          <label id="nameLable" for="nameField">Income:</label>
-          <input id="nameField" type="text" maxlength="7">
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+          <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+          <a href="budgeting.html" class="w3-bar-item w3-button w3-padding-large">GET STARTED</a>
+          <!-- <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">CONTACT</a> -->
         </div>
-        
-        <div class="form-name">
-            <label id="fixed-expenses" for="nameField">Fixed-expenses:</label>
-            <input id="fixedExpenses" type="text" maxlength="7">
+      </div>
+
+        <header class="w3-container w3-cyan w3-center" style="padding:128px 16px">
+                <h1 id="title1" class="w3-margin w3-jumbo">Smart Budgeting</h1>
+                <p class="w3-xlarge">"Budgeting made easier"</p>
+              </header>
+
+  <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+          <div class="w3-twothird">
+            <h1>Description</h1>
+            <h5 class="w3-padding-32">Our application Smart Budget helps users
+              budget their income while maintaining their savings. The user inputs
+              they annual income, fixed expenses, and a goal of how muuch they want to save.(i.e : 
+              John wants to save $3,500 to buy some AirPods and a new Mac).
+            </h5>
+            <h5 class="w3-padding-32"> The user then picks a scenario from different
+              scenarios. Each scenario priortizes a category more than the other (i.e : Alyssa prefers 
+              having a large food budget, so she would choose Senario 1. Mark would likely lean more towards scenario three,
+              since he's making his way through college and dislikes student loans.)
+            </h5>
+            <h5 class="w3-padding-32">After a user picks a scenario, they immediately recieve income
+              divided between seven categories: food, personal expenses/ entertainment, medical expenses,
+              utilities, emergency, education, and transportation. The user's budgets are allocated so they can 
+              still reach the amount they want to save.
+            </h5> 
+              
+
           </div>
 
-        <div class="form-sub">
-          <button id="subButton" type="button">Submit</button>
+          <div class="w3-third w3-center">
+            <div class="logo">
+              <img class="logo"
+                src="assets/accounting.png">
+            </div>
+          </div>
         </div>
-    </form>
-
-    <div>
-        <p id="result"></p>
-    </div>
-  </div>
-
-</body>
+      </div></body>
 </html>

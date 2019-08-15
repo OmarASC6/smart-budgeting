@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/menu.js" type="text/javascript" defer></script>
+    <script src="js/input.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="css/input1.css" />
+    <script src="https://static.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+    <script src="https://static.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+
+    <title>Smart Budgeting</title>
+  </head>
+
+  <body>
+      <!-- Navbar -->
+<div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+          <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+          <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        </div>
+      </div>
+      
+      <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+      <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <!-- <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a> -->
+      </div>
+      
+      <!-- Page content -->
+      <div class="w3-content" style="max-width:2000px;margin-top:46px">
+      
+        <!-- Automatic Slideshow Images -->
+        <div class="mySlides w3-display-container w3-center">
+          <img src="assets/finance_image.png" style="width:100%">
+          <!-- <div class= "w3-container w3-text-white w3-padding-32">  -->
+          </div>
+        </div>
+
+
+      
+        <!-- The How To Section -->
+        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+          <h2 class="w3-wide">Smart Budgeting</h2>
+          <p class="how-to"><i>Do not know what to do ? It's Simple</i></p>
+          <li class="step-step">Simply enter your annual income, your fixed expenses (rent, insurance, etc) and how much you want to save annualy</li>
+          <li class="step-step">As you click submit, you will be directed to the scenarios where you pick your preferable scenario</li>
+          <li class="step-step">As you choose a scenario, you will be able to see how each one allocates the income</li>
+          <li class="step-step">Then, click next and you will see how your budget was allocated making you reach the savings goal you want</li>
+
+
+
+
+          <!--The input setion for the user-->
+          <div class="mahi_holder">
+                <div class="container">
+                  <div class="row bg_3">
+                    <h2><i>Input your income and savings</i></h2>
+          
+                    <div class="col-1 input-effect">
+                      <input id="income" class="effect-19" type="text" placeholder="" />
+                      <label>Anual income</label>
+                      <span class="focus-border">
+                        <i></i>
+                      </span>
+                    </div>
+                    <div class="col-1 input-effect">
+                      <input id="fixed-expenses" class="effect-19" type="text" placeholder="" />
+                      <label>Fixed Expenses</label>
+                      <span class="focus-border">
+                        <i></i>
+                      </span>
+                    </div>
+                    <div class="col-1 input-effect">
+                      <input id="savings" class="effect-19" type="text" placeholder="" />
+                      <label>Target savings</label>
+                      <span class="focus-border">   
+                        <i></i>
+                      </span>
+                    </div>
+                  </div>
+                  <a class="w3-button w3-black" href="#tour" onclick="myFunction()">Submit</a>
+              
+
+                </div>
+              </div>
+
+        </div>
+
+        
+      
+        <!-- The Title Section -->
+        <div class="w3-black" id="tour">
+          <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">Preferable Scenarios</h2>
+            <p class="w3-opacity w3-center"><i>Choose whichever scenario you prefer for your budget</i></p><br>
+      
+
+      
+            <!-- <div class="w3-row-padding w3-padding-32" style="margin:0 -16px"> -->
+                <!-- the scenarios-->
+              <div class="w3-third w3-margin-bottom">
+                <img src="https://image.flaticon.com/icons/svg/706/706195.svg" alt="Food" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                  <p><b>Scenario One</b></p>
+                  <p class="w3-opacity">Priortizing Food</p>
+                  <p>You like good food, and want your budget to reflect this.</p>
+                  <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('popout-food').style.display='block'">Pick Scenario</button>
+                </div>
+              </div>
+              <div class="w3-third w3-margin-bottom">
+                <img src="https://images.assetsdelivery.com/compings_v2/yupiramos/yupiramos1705/yupiramos170510547.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                  <p><b>Scenario Two</b></p>
+                  <p class="w3-opacity">Priortizing Transportation</p>
+                  <p>You commute for long distances, and want the capacity to do so.</p>
+                  <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('popout-transportation').style.display='block'">Pick Scenario</button>
+                </div>
+              </div>
+
+              <div class="w3-third w3-margin-bottom">
+                <img src="https://image.flaticon.com/icons/svg/1966/1966095.svg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                  <p><b>Scenario Three</b></p>
+                  <p class="w3-opacity">Priortizing Education</p>
+                  <p>You like to learn without having to worry about student debt.</p>
+                  <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('popout-education').style.display='block'">Pick Scenario</button>
+                </div>
+              </div>
+
+              <div class="w3-third w3-margin-bottom">
+                    <img src="assets/medic.png" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+                    <div class="w3-container w3-white">
+                      <p><b>Scenario Four</b></p>
+                      <p class="w3-opacity">Priortizing Medical Expenses</p>
+                      <p>You live on the edge, but don't want to get cut by your insurance.</p>
+                      <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('popout-medicalexpenses').style.display='block'">Pick Scenario</button>
+                    </div>
+                  </div>
+
+                  <div class="w3-third w3-margin-bottom">
+                        <img src="https://image.flaticon.com/icons/svg/2037/2037468.svg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                          <p><b>Scenario Five</b></p>
+                          <p class="w3-opacity">Based on National Averages</p>
+                          <p>You do as you please, and we'll handle the money.</p>
+                          <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('popout-balanced').style.display='block'">Pick Scenario</button>
+                        </div>
+                      </div>
+                      <div class="w3-third w3-margin-bottom">
+                            <img src="assets/download.png" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+                            <div class="w3-container w3-white">
+                              <p><b>Scenario Six</b></p>
+                              <p class="w3-opacity">Priortizing Entertainment</p>
+                              <p>You're a party animal or a movie buff, and like to live to the fulles</p>
+                              <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('popout-entertainment').style.display='block'">Pick Scenario</button>
+                            </div>
+                          </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- On Click Scenarios Pop out --><!-- Food Scenario-->
+        <div id="popout-food" class="w3-modal">
+          <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal w3-center w3-padding-32"> 
+              <span onclick="document.getElementById('popout-food').style.display='none'" 
+             class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+              <h2 class="pop-title">Food</h2>
+              <img src="assets\Food Chart.png" style="width: 400px;">
+            </header>
+            <div class="w3-container">
+            <button id = "Button1" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" onclick="document.getElementById('popout-food').style.display='none'">NEXT <i class="fa fa-check"></i></button>    
+            <!-- <button  class="w3-button w3-red w3-section" onclick="document.getElementById('popout-food').style.display='none'">Close<i class="fa fa-remove"></i></button>  -->
+            </div>
+          </div>
+          </div>
+        <!-- On Click Scenarios Pop out --><!-- Transportation Scenario-->
+        <div id="popout-transportation" class="w3-modal">
+                <div class="w3-modal-content w3-animate-top w3-card-4">
+                  <header class="w3-container w3-teal w3-center w3-padding-32"> 
+                    <span onclick="document.getElementById('popout-transportation').style.display='none'" 
+                   class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+                    <h2 class="pop-title">Transportation</h2>
+                    <img src="assets\Trans Chart.png" style="width: 400px;">
+                  </header>
+                  <div class="w3-container">
+                    <button id = "Button2" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" onclick="document.getElementById('popout-transportation').style.display='none'">NEXT <i class="fa fa-check"></i></button>
+                    <!-- <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-transportation').style.display='none'">Close <i class="fa fa-remove"></i></button> -->
+                  </div>
+                </div>
+              </div>
+        <!-- On Click Scenarios Pop out --><!-- Education Scenario-->
+              <div id="popout-education" class="w3-modal">
+                    <div class="w3-modal-content w3-animate-top w3-card-4">
+                      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+                        <span onclick="document.getElementById('popout-education').style.display='none'" 
+                       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+                        <h2 class="pop-title">Education</h2>
+                        <img src="assets\Edu Chart.png" style="width: 400px;">                       
+                      </header>
+                      <div class="w3-container">
+                        <button id = "Button3" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" href="#containerResults"  onclick="document.getElementById('popout-education').style.display='none'">NEXT <i class="fa fa-check"></i></button>
+                        <!-- <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-education').style.display='none'">Close <i class="fa fa-remove"></i></button> -->
+                      </div>
+                    </div>
+                  </div>
+        <!-- On Click Scenarios Pop out --><!-- Medical Scenario-->
+        <div id="popout-medicalexpenses" class="w3-modal">
+                <div class="w3-modal-content w3-animate-top w3-card-4">
+                  <header class="w3-container w3-teal w3-center w3-padding-32"> 
+                    <span onclick="document.getElementById('popout-medicalexpenses').style.display='none'" 
+                   class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+                    <h2 class="pop-title">Medical Expenses</h2>
+                    <img src="assets\Med Chart.png" style="width: 400px;">
+                  </header>
+                  <div class="w3-container">
+                    <button  id = "Button4" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" onclick="document.getElementById('popout-medicalexpenses').style.display='none'">NEXT <i class="fa fa-check"></i></button>
+                    <!-- <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-medicalexpenses').style.display='none'">Close <i class="fa fa-remove"></i></button> -->
+                  </div>
+                </div>
+              </div>                 
+        <!-- On Click Scenarios Pop out --><!-- Balanced Scenario-->
+        <div id="popout-balanced" class="w3-modal">
+                <div class="w3-modal-content w3-animate-top w3-card-4">
+                  <header class="w3-container w3-teal w3-center w3-padding-32"> 
+                    <span onclick="document.getElementById('popout-balanced').style.display='none'" 
+                   class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+                    <h2 class="pop-title">National Averages</h2>
+                    <img src="assets\Rec Chart.png" style="width: 400px;">
+                  </header>
+                  <div class="w3-container">
+                    <button id = "Button5" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" onclick="document.getElementById('popout-balanced').style.display='none'">NEXT <i class="fa fa-check"></i></button>
+                    <!-- <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-balanced').style.display='none'">Close <i class="fa fa-remove"></i></button> -->
+                  </div>
+                </div>
+              </div>       
+        <!-- On Click Scenarios Pop out --><!-- Entertainment Scenario-->
+        <div id="popout-entertainment" class="w3-modal">
+                <div class="w3-modal-content w3-animate-top w3-card-4">
+                  <header class="w3-container w3-teal w3-center w3-padding-32"> 
+                    <span onclick="document.getElementById('popout-entertainment').style.display='none'" 
+                   class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+                    <h2 class="pop-title">Entertainment</h2>
+                    <img src="assets\Entertainment Chart.png" style="width: 400px;">
+                  </header>
+                  <div class="w3-container">
+                    <button id = "Button6" class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right"  onclick="document.getElementById('popout-entertainment').style.display='none'">NEXT <i class="fa fa-check"></i></button>
+                    <!-- <button class="w3-button w3-red w3-section" onclick="document.getElementById('popout-entertainment').style.display='none'">Close <i class="fa fa-remove"></i></button> -->
+                  </div>
+                </div>
+              </div>
+
+              <div id="containerResults">
+
+                  <table align="center">
+                    <tr>
+                        <th scope="col">Category</th>
+                        <th scope="col">Money</th>
+                    </tr>
+                      <tr>
+                        <td>Food</td>
+                        <td id="resultFood"></td>
+                      </tr>
+                      <tr>
+                        <td>Personal</td>
+                        <td id="resultPersonal"></td>
+                      </tr>
+                      <tr>
+                        <td>Transportation</td>
+                        <td id="resultTransport"></td>
+                      </tr>
+                      <tr>
+                        <td>Medical</td>
+                        <td id="resultMedical"></td>
+                      </tr>
+                      <tr>
+                        <td>Utilities</td>
+                        <td id="resultUtilities"></td>
+                      </tr>
+                      <tr>
+                        <td>Emergency</td>
+                        <td id="resultEmergency"></td>
+                      </tr>
+                      <tr>
+                        <td>Education</td>
+                        <td id="resultEducation"></td>
+                      </tr>
+                      <tr>
+                          <td>Savings Goal</td>
+                          <td id="resultSavings"></td>
+                      </tr>
+                    </table>
+            </div>
+
+
+
+
+
+              <!-- End Page Content -->
+  </body>
+</html>
