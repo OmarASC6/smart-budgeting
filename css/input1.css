@@ -213,3 +213,8 @@ td:first-child {
   font-size: 20px;
   font-style: normal;
 }
+
+.w3-teal, .w3-hover-teal:hover {
+  color: #fff!important;
+  background-color: #1abcb4!important;
+}
